@@ -8,7 +8,6 @@
   width: 100%;
 }
 
-/* Logo Container */
 .logoContainer {
   display: flex;
   align-items: center;
@@ -20,14 +19,12 @@
   margin-right: 10px;
 }
 
-/* Tagline */
 .tagline {
   font-size: 14px;
   font-weight: bold;
   color: #555;
 }
 
-/* Partner Logo */
 .partnerLogo {
   display: flex;
   flex-direction: column;
@@ -50,7 +47,6 @@
   text-align: center;
 }
 
-/* Navigation */
 .navbar {
   flex-grow: 1;
   display: flex;
@@ -78,7 +74,6 @@
   text-decoration: none;
 }
 
-/* Blue + sign for 'About Us' */
 .navItem:last-child::after {
   content: ' +';
   color: #2d51d9;
@@ -90,7 +85,6 @@
   color: white;
 }
 
-/* Vertical Line */
 .verticalLine {
   width: 2px;
   height: 80px;
@@ -98,7 +92,6 @@
   margin: 0 15px;
 }
 
-/* 🔹 Responsive Design */
 @media screen and (max-width: 1024px) {
   .header {
     flex-direction: column;
@@ -133,7 +126,6 @@
   }
 }
 
-/* Mobile View (Hamburger Menu) */
 @media screen and (max-width: 768px) {
   .header {
     flex-direction: column;
@@ -177,7 +169,6 @@
     padding: 10px;
   }
 
-  /* Hamburger Menu Button */
   .menuButton {
     display: block;
     background: none;
