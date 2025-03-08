@@ -1,0 +1,195 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: white;
+  padding: 0;
+  height: 80px;
+  width: 100%;
+}
+
+/* Logo Container */
+.logoContainer {
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.logo {
+  height: 40px;
+  margin-right: 10px;
+}
+
+/* Tagline */
+.tagline {
+  font-size: 14px;
+  font-weight: bold;
+  color: #555;
+}
+
+/* Partner Logo */
+.partnerLogo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px;
+  height: 80px;
+}
+
+.partnerImage {
+  height: 40px;
+  display: block;
+}
+
+.partnerText {
+  font-size: 12px;
+  font-weight: bold;
+  color: black;
+  margin-top: 5px;
+  text-align: center;
+}
+
+/* Navigation */
+.navbar {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+}
+
+.navList {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  height: 100%;
+}
+
+.navItem {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  padding: 0 15px;
+  background: none;
+  color: black;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+/* Blue + sign for 'About Us' */
+.navItem:last-child::after {
+  content: ' +';
+  color: #2d51d9;
+  font-weight: bold;
+}
+
+.active {
+  background: #2d51d9;
+  color: white;
+}
+
+/* Vertical Line */
+.verticalLine {
+  width: 2px;
+  height: 80px;
+  background-color: #b9c0c9;
+  margin: 0 15px;
+}
+
+/* 🔹 Responsive Design */
+@media screen and (max-width: 1024px) {
+  .header {
+    flex-direction: column;
+    height: auto;
+    padding: 10px 0;
+  }
+
+  .logoContainer {
+    justify-content: center;
+    padding: 10px;
+  }
+
+  .navbar {
+    width: 100%;
+  }
+
+  .navList {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navItem {
+    padding: 10px;
+  }
+
+  .partnerLogo {
+    padding: 10px;
+  }
+
+  .verticalLine {
+    display: none;
+  }
+}
+
+/* Mobile View (Hamburger Menu) */
+@media screen and (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .logoContainer {
+    flex-direction: column;
+    padding: 10px 0;
+  }
+
+  .tagline {
+    font-size: 12px;
+  }
+
+  .navbar {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    background: white;
+  }
+
+  .showMenu {
+    display: flex;
+  }
+
+  .navList {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .navItem {
+    width: 100%;
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .partnerLogo {
+    padding: 10px;
+  }
+
+  /* Hamburger Menu Button */
+  .menuButton {
+    display: block;
+    background: none;
+    border: none;
+    font-size: 28px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .menuButton {
+    display: none;
+  }
+}
