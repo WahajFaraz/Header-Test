@@ -18,7 +18,6 @@ export default function HeaderPage() {
         <div className={styles.verticalLine}></div>
       </div>
 
-      {/* Hamburger Menu Button (Visible on Mobile) */}
       <button
         className={styles.menuButton}
         onClick={() => setMenuOpen(!menuOpen)}
@@ -26,7 +25,6 @@ export default function HeaderPage() {
         ☰
       </button>
 
-      {/* Navigation Menu */}
       <nav className={`${styles.navbar} ${menuOpen ? styles.showMenu : ''}`}>
         <ul className={styles.navList}>
           <li className={`${styles.navItem} ${styles.active}`}>
@@ -36,7 +34,7 @@ export default function HeaderPage() {
           <li className={styles.navItem}>Projects</li>
           <li className={styles.navItem}>Services</li>
           <li className={styles.navItem}>Useful materials</li>
-          <li className={styles.navItem}>About us +</li>
+          <li className={styles.navItem}>About us </li>
         </ul>
       </nav>
 
