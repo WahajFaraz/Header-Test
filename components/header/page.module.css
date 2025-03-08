@@ -6,6 +6,7 @@
   padding: 0;
   height: 80px;
   width: 100%;
+  transition: background 0.3s ease-in-out;
 }
 
 .logoContainer {
@@ -17,6 +18,11 @@
 .logo {
   height: 40px;
   margin-right: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.logo:hover {
+  transform: scale(1.1);
 }
 
 .tagline {
@@ -37,6 +43,11 @@
 .partnerImage {
   height: 40px;
   display: block;
+  transition: transform 0.3s ease-in-out;
+}
+
+.partnerImage:hover {
+  transform: scale(1.1);
 }
 
 .partnerText {
@@ -72,6 +83,13 @@
   color: black;
   font-weight: 500;
   text-decoration: none;
+  transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.navItem:hover {
+  background: #2d51d9;
+  color: white;
 }
 
 .navItem:last-child::after {
@@ -83,6 +101,12 @@
 .active {
   background: #2d51d9;
   color: white;
+  transition: background 0.3s ease-in-out;
+}
+
+.active:hover {
+  background: #1a3ab5;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 .verticalLine {
@@ -90,6 +114,21 @@
   height: 80px;
   background-color: #b9c0c9;
   margin: 0 15px;
+}
+
+.menuButton {
+  background: #2d51d9;
+  color: white;
+  border: none;
+  font-size: 28px;
+  cursor: pointer;
+  padding: 5px 10px;
+  transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.menuButton:hover {
+  background: #1a3ab5;
+  transform: scale(1.1);
 }
 
 @media screen and (max-width: 1024px) {
@@ -115,6 +154,8 @@
 
   .navItem {
     padding: 10px;
+    width: 100%;
+    text-align: center;
   }
 
   .partnerLogo {
@@ -171,10 +212,6 @@
 
   .menuButton {
     display: block;
-    background: none;
-    border: none;
-    font-size: 28px;
-    cursor: pointer;
     margin-top: 10px;
   }
 }
